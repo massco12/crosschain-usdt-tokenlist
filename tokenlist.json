@@ -1,0 +1,21 @@
+{
+  "name": "CrossChain USDT List",
+  "logoURI": "https://assets.coingecko.com/coins/images/325/thumb/Tether.png",
+  "keywords": ["usdt", "stablecoin", "layerzero", "crosschain"],
+  "timestamp": "2025-04-22T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 11155111,
+      "address": "0xf74b7FdC7390F9077512191020DF2c098c2c0203",
+      "name": "CrossChain USDT",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://cryptologos.cc/logos/tether-usdt-logo.svg?v=025"
+    }
+  ]
+}
