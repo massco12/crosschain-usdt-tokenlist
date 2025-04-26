@@ -1,21 +1,33 @@
 {
-  "name": "CrossChain USDT List",
+  "name": "CrossChain USDT",
+  "symbol": "USDT",
+  "decimals": 6,
+  "description": "CrossChain USDT is a stablecoin designed for seamless cross-chain transactions using LayerZero protocol",
+  "image": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
   "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
-  "keywords": ["usdt", "stablecoin", "layerzero", "crosschain"],
+  "website": "https://massco12.github.io/crosschain-usdt-tokenlist/",
   "timestamp": "2025-04-22T00:00:00+00:00",
-  "version": {
-    "major": 1,
-    "minor": 0,
-    "patch": 0
-  },
-  "tokens": [
+  "links": [
     {
-      "chainId": 11155111,
-      "address": "0xf74b7FdC7390F9077512191020DF2c098c2c0203",
-      "name": "CrossChain USDT",
-      "symbol": "USDT",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png"
+      "name": "github",
+      "url": "https://massco12.github.io/crosschain-usdt-tokenlist/"
     }
-  ]
+  ],
+  "extensions": {
+    "isStablecoin": true,
+    "bridgeInfo": {
+      "1": {
+        "tokenAddress": "0xMainnetAddressHere"
+      },
+      "56": {
+        "tokenAddress": "0xBSCAddressHere"
+      },
+      "137": {
+        "tokenAddress": "0xPolygonAddressHere"
+      },
+      "11155111": {
+        "tokenAddress": "0xf74b7FdC7390F9077512191020DF2c098c2c0203"
+      }
+    }
+  }
 }
