@@ -1,33 +1,41 @@
-{
-  "name": "CrossChain USDT",
-  "symbol": "USDT",
-  "decimals": 6,
-  "description": "CrossChain USDT is a stablecoin designed for seamless cross-chain transactions using LayerZero protocol",
-  "image": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
-  "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
-  "website": "https://massco12.github.io/crosschain-usdt-tokenlist/",
-  "timestamp": "2025-04-22T00:00:00+00:00",
-  "links": [
-    {
-      "name": "github",
-      "url": "https://massco12.github.io/crosschain-usdt-tokenlist/"
+# Re-run after environment reset to regenerate the corrected token list JSON
+
+import json
+from datetime import datetime
+
+token_list_corrected = {
+    "name": "CrossChain USDT Token List",
+    "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+    "keywords": ["stablecoin", "usdt", "cross-chain"],
+    "timestamp": datetime.utcnow().isoformat() + "Z",
+    "tokens": [
+        {
+            "name": "CrossChain USDT",
+            "symbol": "USDT",
+            "decimals": 6,
+            "address": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee",  # Sepolia testnet
+            "chainId": 11155111,
+            "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+            "extensions": {
+                "isStablecoin": True,
+                "bridgeInfo": {
+                    "1": {"tokenAddress": "0xMainnetAddressHere"},
+                    "56": {"tokenAddress": "0xBSCAddressHere"},
+                    "137": {"tokenAddress": "0xPolygonAddressHere"},
+                    "11155111": {"tokenAddress": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee"}
+                }
+            }
+        }
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
     }
-  ],
-  "extensions": {
-    "isStablecoin": true,
-    "bridgeInfo": {
-      "1": {
-        "tokenAddress": "0xMainnetAddressHere"
-      },
-      "56": {
-        "tokenAddress": "0xBSCAddressHere"
-      },
-      "137": {
-        "tokenAddress": "0xPolygonAddressHere"
-      },
-      "11155111": {
-        "tokenAddress": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee"
-      }
-    }
-  }
 }
+
+file_path = "/mnt/data/tokenlist_for_rainbow_corrected.json"
+with open(file_path, "w") as f:
+    json.dump(token_list_corrected, f, indent=2)
+
+file_path
