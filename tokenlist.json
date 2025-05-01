@@ -1,41 +1,43 @@
-# Re-run after environment reset to regenerate the corrected token list JSON
 
-import json
-from datetime import datetime
-
-token_list_corrected = {
-    "name": "CrossChain USDT Token List",
-    "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
-    "keywords": ["stablecoin", "usdt", "cross-chain"],
-    "timestamp": datetime.utcnow().isoformat() + "Z",
-    "tokens": [
-        {
-            "name": "CrossChain USDT",
-            "symbol": "USDT",
-            "decimals": 6,
-            "address": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee",  # Sepolia testnet
-            "chainId": 11155111,
-            "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
-            "extensions": {
-                "isStablecoin": True,
-                "bridgeInfo": {
-                    "1": {"tokenAddress": "0xMainnetAddressHere"},
-                    "56": {"tokenAddress": "0xBSCAddressHere"},
-                    "137": {"tokenAddress": "0xPolygonAddressHere"},
-                    "11155111": {"tokenAddress": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee"}
-                }
-            }
+{
+  "name": "CrossChain USDT Token List",
+  "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+  "keywords": [
+    "stablecoin",
+    "usdt",
+    "cross-chain"
+  ],
+  "timestamp": "2025-05-01T13:47:46.842155Z",
+  "tokens": [
+    {
+      "name": "CrossChain USDT",
+      "symbol": "USDT",
+      "decimals": 6,
+      "address": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee",
+      "chainId": 11155111,
+      "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+      "extensions": {
+        "isStablecoin": true,
+        "bridgeInfo": {
+          "1": {
+            "tokenAddress": "0xMainnetAddressHere"
+          },
+          "56": {
+            "tokenAddress": "0xBSCAddressHere"
+          },
+          "137": {
+            "tokenAddress": "0xPolygonAddressHere"
+          },
+          "11155111": {
+            "tokenAddress": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee"
+          }
         }
-    ],
-    "version": {
-        "major": 1,
-        "minor": 0,
-        "patch": 0
+      }
     }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
 }
-
-file_path = "/mnt/data/tokenlist_for_rainbow_corrected.json"
-with open(file_path, "w") as f:
-    json.dump(token_list_corrected, f, indent=2)
-
-file_path
