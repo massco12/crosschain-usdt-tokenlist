@@ -12,7 +12,7 @@
       "name": "CrossChain USDT",
       "symbol": "USDT",
       "decimals": 6,
-      "address": "0x378465C7965c99a939524Fa4581F2a45bd9F6e04",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "chainId": 11155111,
       "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
       "extensions": {
