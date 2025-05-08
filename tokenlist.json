@@ -1,6 +1,7 @@
 {
   "name": "CrossChain USDT Token List",
-  "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+  "logoURI": "https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png",
+  "logoBackupURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
   "keywords": [
     "stablecoin",
     "usdt",
@@ -14,7 +15,8 @@
       "decimals": 6,
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "chainId": 11155111,
-      "logoURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+      "logoURI": "https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png",
+      "logoBackupURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
       "extensions": {
         "isStablecoin": true,
         "bridgeInfo": {
