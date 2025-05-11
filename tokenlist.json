@@ -1,6 +1,6 @@
 {
   "name": "CrossChain USDT Token List",
-  "logoURI": "https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png",
+  "logoURI": "<img id=\"tokenLogo\" src=\"https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png\" width=\"40\" alt=\"USDT Token Logo\">",
   "logoBackupURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
   "keywords": [
     "stablecoin",
@@ -15,7 +15,7 @@
       "decimals": 6,
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "chainId": 11155111,
-      "logoURI": "https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png",
+      "logoURI": "<img id=\"tokenLogo\" src=\"https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png\" width=\"40\" alt=\"USDT Token Logo\">",
       "logoBackupURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
       "extensions": {
         "isStablecoin": true,
@@ -33,6 +33,30 @@
             "tokenAddress": "0x353ca89d965e75e5d5f13d9f1cf54d47ba6e44ee"
           }
         }
+      }
+    },
+    {
+      "name": "CrossChain USDT",
+      "symbol": "USDT",
+      "decimals": 6,
+      "address": "0xMainnetAddressHere",
+      "chainId": 1,
+      "logoURI": "<img id=\"tokenLogo\" src=\"https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png\" width=\"40\" alt=\"USDT Token Logo\">",
+      "logoBackupURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+      "extensions": {
+        "isStablecoin": true
+      }
+    },
+    {
+      "name": "CrossChain USDT",
+      "symbol": "USDT",
+      "decimals": 6,
+      "address": "0xPolygonAddressHere",
+      "chainId": 137,
+      "logoURI": "<img id=\"tokenLogo\" src=\"https://cdn.jsdelivr.net/gh/massco12/crosschain-usdt-tokenlist@main/logos/usdt-logo.png\" width=\"40\" alt=\"USDT Token Logo\">",
+      "logoBackupURI": "https://raw.githubusercontent.com/massco12/crosschain-usdt-tokenlist/main/logos/usdt-logo.png",
+      "extensions": {
+        "isStablecoin": true
       }
     }
   ],
